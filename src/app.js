@@ -1,3 +1,8 @@
+const excuseDOM = document.querySelector("#excuses");
+window.onload = function() {
+  excuseDOM.innerHTML = excuseGenerator(dataset);
+};
+
 let who = ["The dog", "My grandma", "His turtle", "My bird"];
 let action = ["ate", "peed", "crushed", "broke"];
 let what = ["my homework", "the keys", "the car"];
@@ -22,5 +27,3 @@ const excuseGenerator = arr => {
   }
   return str;
 };
-
-console.log(excuseGenerator(dataset));
